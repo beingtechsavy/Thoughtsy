@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Thoughtsy",
+    "version": "1.0",
+    "description": "Save important links and notes.",
+    "permissions": [
+      "storage",
+      "tabs"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "image.png",
+        "48": "image.png",
+        "128": "image.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  

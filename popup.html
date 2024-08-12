@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Link & Note Saver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="popup">
+    <h1>Thoughtsy</h1>
+    <form id="link-form">
+      <div class="input-group">
+        <div class="input-container">
+          <input type="url" id="link" placeholder="https://example.com" required />
+          <button type="button" id="clear-link" class="clear-button">
+            <img src="dustbin.png" alt="Clear" />
+          </button>
+        </div>
+      </div>
+      <button type="button" id="fetch-url">Fetch Current URL</button>
+      <div class="input-group">
+        <div class="input-container">
+          <textarea id="note" placeholder="Enter your note here"></textarea>
+          <button type="button" id="clear-note" class="clear-button">
+            <img src="dustbin.png" alt="Clear" />
+          </button>
+        </div>
+      </div>
+      <button type="submit">Save</button>
+    </form>
+    <input type="text" id="search" placeholder="Search..." />
+    <div class="saved-links">
+      <h2>Saved Links</h2>
+      <ul id="link-list"></ul>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

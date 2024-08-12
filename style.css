@@ -1,0 +1,251 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #000000; 
+  color: #ffffff; 
+}
+
+.popup {
+  width: 320px;
+  padding: 20px;
+  background: #1e1e1e; 
+  border: 1px solid #444444;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  color: #ffffff; 
+}
+
+h1 {
+  font-size: 22px;
+  color: #ffffff; 
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 12px;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+input[type="url"], textarea {
+  border: 1px solid #666666; 
+  border-radius: 8px;
+  padding: 12px;
+  padding-right: 40px; 
+  margin-bottom: 12px;
+  font-size: 16px;
+  background-color: #2c2c2c; 
+  color: #ffffff; 
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  overflow-wrap: break-word; 
+}
+
+input[type="url"]:focus, textarea:focus {
+  border-color: #007bff;
+  background-color: #1e1e1e;
+  outline: none;
+}
+
+input[type="url"] {
+  height: 44px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.clear-button {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.clear-button img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#fetch-url {
+  background: #28a745; 
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 12px; 
+}
+
+#fetch-url:hover {
+  background: #218838;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#search {
+  border: 1px solid #666666; 
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 12px; 
+  font-size: 16px;
+  background-color: #2c2c2c;
+  color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#search:focus {
+  border-color: #007bff;
+  background-color: #1e1e1e;
+  outline: none;
+}
+
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444444; 
+  border-radius: 8px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666666; 
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; 
+  border-radius: 8px; 
+}
+
+.saved-links {
+  margin-top: 20px;
+  max-height: 400px; 
+  overflow-y: auto; 
+}
+
+.saved-links h2 {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+#link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#link-list li {
+  background: #2c2c2c; 
+  border: 1px solid #444444;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  word-wrap: break-word; 
+  overflow: hidden; 
+}
+
+#link-list li:hover {
+  background: #3a3a3a;
+}
+
+#link-list a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block; 
+  overflow-wrap: break-word; 
+}
+
+#link-list a:hover {
+  text-decoration: underline;
+}
+
+#link-list p {
+  margin: 8px 0 0 0;
+  color: #cccccc; 
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #000000;
+  color: #ffffff;
+}
+
+.popup {
+  width: 320px;
+  padding: 20px;
+  background: #1e1e1e;
+  border: 1px solid #444444;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  color: #ffffff;
+}
+
+
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.edit-button, .delete-button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-button {
+  color: red;
+}
